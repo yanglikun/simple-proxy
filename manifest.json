@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "proxy4jd",
+  "description": "proxy4jd 如果有问题请联系yanglikun@jd.com",
+  "version": "1.0",
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png",
+    "default_title": "proxy4jd"
+  },
+  "icons": {
+    "128": "icon.png",
+    "48":  "icon.png",
+    "16":  "icon.png"
+  },
+  "permissions": [
+    "proxy",
+    "tabs"
+  ]
+}
