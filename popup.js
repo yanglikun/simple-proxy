@@ -1,4 +1,6 @@
-localStorage.setItem("proxyStatus",localStorage.getItem("proxyStatus")==null?0:localStorage.getItem("proxyStatus"))
+//后期再优化修改
+
+//localStorage.setItem("proxyStatus", localStorage.getItem("proxyStatus") == null ? 0 : localStorage.getItem("proxyStatus"))
 $(function () {
     $("#enProxyBtn").click(function () {
         enProxy();
@@ -28,7 +30,7 @@ var enProxy = function () {
         {value: proxyConfig, scope: 'regular'},
         function () {
         });
-    localStorage.setItem("proxyStatus",1)
+    localStorage.setItem("proxyStatus", 1)
     showStatusFun();
 }
 var disProxy = function () {
@@ -36,9 +38,6 @@ var disProxy = function () {
         {value: sytemConfig, scope: 'regular'},
         function () {
         });
-    localStorage.setItem("proxyStatus",0)
+    localStorage.setItem("proxyStatus", 0)
     showStatusFun();
-}
-var showStatusFun=function(){
-    $("#showStatus").text(localStorage.getItem("proxyStatus")==0?"禁用":"启用")
 }
